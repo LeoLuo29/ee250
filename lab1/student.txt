@@ -1,0 +1,7 @@
+leoluo
+total 8
+-rw-rw-r-- 1 ubuntu ubuntu 7 Aug 31 14:15 student-copy.txt
+-rw-rw-r-- 1 ubuntu ubuntu 7 Aug 31 14:15 student.txt
+total 8
+-rw-rw-r-- 1 ubuntu ubuntu   7 Aug 31 14:15 backup.txt
+-rw-rw-r-- 1 ubuntu ubuntu 128 Aug 31 14:16 student.txt
