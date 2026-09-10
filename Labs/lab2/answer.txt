@@ -1,3 +1,4 @@
+Part 1
 1. How did introducing 50% packet loss affect the UDP messages you observed? Explain why.
 
 about 50% of the messages will randomly diappear.
@@ -11,4 +12,32 @@ it will slow down the transmission of the message by around 50%. However, all me
 network?
 
 it is a greate way to locally test UDP and TCP system without physical wifi network. 
+
+
+Part 2
+1. Which side calls listen()/accept(), and which side calls connect()? Why?
+
+client calls connect(), because connecting requires machine address that the client provides. And client chooses what server and what port to connect with.
+Server calls listen() and accept(), because server is the one that accepts connect requests sent by clients. 
+and listen() is the command that enables the server to accept connect request from the clients. 
+
+2. What two pieces of information does the client need in order to connect to the server?
+Server Host and Server Port
+
+3. What is the difference between 127.0.0.1 and the VM IPv4 address you found with hostname -I or ip
+addr?
+
+one is only for local device, and the other is for external device/inter device communication
+
+4. The same TCP connection can carry data in both directions. Identify where this happens in the
+client/server exchange.
+
+socket.sendall()
+socket.recv()
+socket.listen()
+socket.sendall()
+
+
+
+
 
