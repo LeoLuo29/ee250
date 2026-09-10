@@ -1,0 +1,14 @@
+1. How did introducing 50% packet loss affect the UDP messages you observed? Explain why.
+
+about 50% of the messages will randomly diappear.
+
+2. How did introducing 50% packet loss affect the TCP exchange? Did the application data disappear, arrive
+later, or behave differently? Explain why.
+
+it will slow down the transmission of the message by around 50%. However, all messages are guranteed to arrive.
+
+3. Why is localhost useful for testing applications even though no packets need to traverse the physical Wi-Fi
+network?
+
+it is a greate way to locally test UDP and TCP system without physical wifi network. 
+
