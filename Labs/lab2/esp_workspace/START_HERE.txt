@@ -1,0 +1,26 @@
+EE 250L Fall 2026 - Lab 2 Starter Bundle
+
+Files:
+  tcp_server.py
+      Complete Python TCP server. Use unchanged in Parts 2 and 3.
+
+  tcp_client.py
+      Python TCP client starter. Complete the TODOs for Part 2.
+
+  README.md
+      Template for written lab-question responses.
+
+  esp32_tcp_client/
+      ESP-IDF project starter for Part 3.
+      Configure Wi-Fi + server address, then complete TCP socket TODOs.
+
+Suggested order:
+  1. Complete Part 1 from the lab handout.
+  2. Run:
+         python3 tcp_server.py 5000
+  3. Complete tcp_client.py and test against 127.0.0.1:5000.
+  4. Find the VM's reachable IPv4 address for Part 3.
+  5. Complete the ESP32-S3 TCP client TODOs and connect to the same server.
+
+Important:
+  Never submit or commit real Wi-Fi credentials.
