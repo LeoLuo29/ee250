@@ -27,7 +27,7 @@ Server Host and Server Port
 3. What is the difference between 127.0.0.1 and the VM IPv4 address you found with hostname -I or ip
 addr?
 
-one is only for local device, and the other is for external device/inter device communication
+one is only for local device (for esp itself) , and the other is for external device/inter device communication
 
 4. The same TCP connection can carry data in both directions. Identify where this happens in the
 client/server exchange.
@@ -36,6 +36,31 @@ socket.sendall()
 socket.recv()
 socket.listen()
 socket.sendall()
+
+
+part 3
+1. Did tcp_server.py need to know that the second client was an ESP32-S3 written in C rather than a Python
+program? Why or why not?
+
+no the program does not need to know, cause eventually the data trasmitted are in binaries
+
+2. Why can the ESP32-S3 not use 127.0.0.1 to reach the server running in the Ubuntu VM?
+Because 127.0.0.1 is local device, it is pointing to the esp itself.
+
+3. Why can a VM in NAT mode have Internet access yet still be difficult for the ESP32-S3 to contact directly?
+because NAT assignes an additional IP address for the virtual machine and isolates the virtual machine from the local native mac. 
+However, if using bridge, the mac IP addeess willl be fowarded to VM machine. 
+
+4. What role does the TCP port number play when both the ESP32-S3 and VM already have IP addresses?
+because IP address only identify which local network are you using. it does not specify which device or which program to send or receive messages. 
+you need a port number to identify the specific device and program.
+
+5. What does TCP guarantee for the byte stream, and what does the application still have to define for itself?
+the application still have to define its message boundaries and higher level protocols. 
+TCP byte stream gurantees that all messages will definitly getting sent and received. so even though amount of payloads are limited in 
+a certain amount of time, TCP will make sure to queue the remaining message for the next round. 
+
+
 
 
 
