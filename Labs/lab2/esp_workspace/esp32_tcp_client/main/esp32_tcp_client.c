@@ -23,6 +23,7 @@
 #include <sys/socket.h>
 #include <arpa/inet.h>
 #include <unistd.h>
+#include <errno.h>
 
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
@@ -151,7 +152,7 @@ static void tcp_client_task(void *pvParameters)
      *
      * Store the returned file descriptor in sock.
      */
-    int sock = -1;
+    int sock = socket(AF_INET, SOCK_STREAM, IPPROTO_IP);
 
     if (sock < 0) {
         ESP_LOGE(TAG, "TODO: socket has not been created yet");
@@ -171,6 +172,12 @@ static void tcp_client_task(void *pvParameters)
      * Function to investigate:
      *     inet_pton()
      */
+    if (inet_pton(AF_INET, SERVER_IP, &dest_addr.sin_addr) != 1) {
+        ESP_LOGE(TAG, "Invalid SERVER_IP address: %s", SERVER_IP);
+        close(sock);
+        vTaskDelete(NULL);
+        return;
+    }
 
     /*
      * TODO 3: Connect the socket to the Python server.
@@ -181,6 +188,13 @@ static void tcp_client_task(void *pvParameters)
      * Function to investigate:
      *     connect()
      */
+    if (connect(sock, (struct sockaddr *)&dest_addr, sizeof(dest_addr)) != 0) {
+        ESP_LOGE(TAG, "Socket unable to connect: errno %d", errno);
+        close(sock);
+        vTaskDelete(NULL);
+        return;
+    }
+    ESP_LOGI(TAG, "Connected to %s:%d", SERVER_IP, SERVER_PORT);
 
     /*
      * TODO 4: Send CLIENT_MESSAGE to the server.
@@ -193,6 +207,20 @@ static void tcp_client_task(void *pvParameters)
      *
      * On success, print the message you sent with ESP_LOGI().
      */
+    const char *msg = CLIENT_MESSAGE;
+    size_t total_len = strlen(msg);
+    size_t sent_total = 0;
+    while (sent_total < total_len) {
+        int sent = send(sock, msg + sent_total, total_len - sent_total, 0);
+        if (sent < 0) {
+            ESP_LOGE(TAG, "Error occurred during sending: errno %d", errno);
+            close(sock);
+            vTaskDelete(NULL);
+            return;
+        }
+        sent_total += sent;
+    }
+    ESP_LOGI(TAG, "Sent: %s", msg);
 
     /*
      * TODO 5: Receive the server acknowledgment.
@@ -207,6 +235,15 @@ static void tcp_client_task(void *pvParameters)
      * recv() returns a byte count. If space remains in rx_buffer, add
      * a '\0' terminator before printing it as a C string.
      */
+    int len = recv(sock, rx_buffer, sizeof(rx_buffer) - 1, 0);
+    if (len < 0) {
+        ESP_LOGE(TAG, "recv failed: errno %d", errno);
+    } else if (len == 0) {
+        ESP_LOGW(TAG, "Server closed the connection without a response");
+    } else {
+        rx_buffer[len] = '\0';
+        ESP_LOGI(TAG, "Received %d bytes: %s", len, rx_buffer);
+    }
 
     /*
      * TODO 6: Close the TCP socket.
@@ -214,6 +251,7 @@ static void tcp_client_task(void *pvParameters)
      * Function to investigate:
      *     close()
      */
+    close(sock);
 
     ESP_LOGI(TAG, "TCP client task finished");
     vTaskDelete(NULL);
