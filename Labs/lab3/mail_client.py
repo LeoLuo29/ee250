@@ -13,20 +13,27 @@ def send_message(sender, receiver, message):
     # TODO 1:
     # POST to /messages with a JSON body containing
     # sender, receiver, and message.
-    pass
+    body = {"sender": sender, "receiver": receiver, "message": message}
+    response = requests.post(f"{SERVER}/messages", json=body)
+    print_response(response)
 
 
 def list_messages(receiver=None):
     # TODO 2:
     # GET /messages.
     # If receiver is provided, send it as the receiver query parameter.
-    pass
+    params = {}
+    if receiver is not None:
+        params["receiver"] = receiver
+    response = requests.get(f"{SERVER}/messages", params=params)
+    print_response(response)
 
 
 def delete_message(message_id):
     # TODO 3:
     # DELETE /messages/<id>.
-    pass
+    response = requests.delete(f"{SERVER}/messages/{message_id}")
+    print_response(response)
 
 
 def get_parser():

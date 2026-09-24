@@ -1,0 +1,38 @@
+lab3 answers
+
+PART 1:
+
+
+for demo:
+(.venv) (base) leoluo@MacBook-Air-von-Leo-6 lab3 % python3 mail_client.py send -f alice -t bob -m "hi"
+python3 mail_client.py list
+python3 mail_client.py list --receiver bob
+python3 mail_client.py delete 1
+
+
+
+
+1. In your own words, what structure does HTTP add on top of the raw TCP byte stream used in Lab 2?
+In lab2, raw TCP does not decide what are meaning of the bytes. and how to report error. 
+However, for Http, it provides a standardized way of doing it.  e.g. GET(), POST(), DELETE()
+
+2. What is the resource in this API? For POST /messages, GET /messages, GET
+/messages?receiver=<name>, and DELETE /messages/<id>, explain what each method/path combination
+does.
+The resource is the messages. 
+POST: create a new message in the JSON body
+
+GET: reads the whole message collection and return every messages
+
+DELETE: delete that particular message with that id
+
+
+3. Name one common REST-related HTTP method that this message API does not use (for example PUT or
+PATCH). How could the API be extended to use it meaningfully?
+PUT would replace the entire existing resource
+PATCH only does edite on the existing resource
+if the API want to ammend a particular part of the message sent, it can use PATCH
+if things are getting totally replaced, use PUT.
+
+
+PART 2:
