@@ -36,3 +36,19 @@ if things are getting totally replaced, use PUT.
 
 
 PART 2:
+4. Why do many production APIs require an API key? What can the provider control or measure with it?
+API key informs the provider which client is accessing the information.
+It helps the provider to verify whether the client is eligible to access the requested information
+
+5. Why should the client check the HTTP status code before assuming the response body has the successful
+WeatherAPI JSON structure?
+The error message informs the client whether the request was successful or not. If not, it tells why.
+It also helps the client to verify that the reponse is a JSON body, so that no further local client error will be triggered
+
+6. The Python and ESP32 implementations use different languages and libraries. What remains the same at
+the HTTP/API level?
+Java script object notation.
+Protocol
+URL 
+Parameters
+Those are univers

@@ -1,0 +1,24 @@
+# EE 250L Lab 05 Starter Code — Fall 2026
+#
+# Project defaults, merged into a fresh `sdkconfig` on the first build.
+# Deliberately minimal, as in Lab 4: no flash size is pinned because the
+# DevKitC-1 ships in 8 MB and 16 MB variants.
+
+CONFIG_IDF_TARGET="esp32s3"
+
+# 1 ms scheduler tick instead of the 10 ms default.  The UDP sender paces
+# itself by yielding for one tick whenever it is ahead of schedule; with a
+# 10 ms tick that would mean 10 Mbit/s arrives in bursts of ~9 datagrams,
+# which is still fine for a Wi-Fi link but noisier than it needs to be.
+CONFIG_FREERTOS_HZ=1000
+
+# The console REPL task is where the iperf runs execute; its stack size is
+# set in main.c.  app_main() itself only needs a little more than default.
+CONFIG_ESP_MAIN_TASK_STACK_SIZE=4096
+
+# Console on the UART that the CP210x USB-UART bridge exposes as
+# /dev/ttyUSB0 — the same port `idf.py monitor` has used since Lab 1.  If you
+# prefer the board's other USB connector (USB-Serial-JTAG, /dev/ttyACM0),
+# run `idf.py menuconfig` -> Component config -> ESP System Settings ->
+# Channel for console output, and main.c adapts automatically.
+CONFIG_ESP_CONSOLE_UART_DEFAULT=y
