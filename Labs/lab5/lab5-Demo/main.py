@@ -16,16 +16,24 @@ def get_wifi_signal_strength() -> int:
         # dBm stands for decibel-milliwatts. -60 to -70 is considered as a good value
 
     # Question 2: Why do we need to check the OS? What is the difference between the commands for each OS?
-        # 
+        # Because python has no library to check the wifi signal. It has to rely on the native OS
+        # to read wifi signal. the the different commands are for different OS running on the native metal.
+        # For mac: wdutil only prints the RSSI when run as root, so macOS will ask for 
+        # your login password the first time (and again after a few minutes).
+
 
     # Question 3: In your own words, what is subprocess.check_output doing? What does it return?
     # HINT: https://docs.python.org/3/library/subprocess.html#subprocess.check_output
+    # it returns a return code to report any issues and errors appeared.
 
     # Question 4: In your own words, what is re.search doing? What does it return?
     # HINT: https://docs.python.org/3/library/re.html#re.search
+    # it checks and search a  regular expression pattern that matches the one provided in the input.
 
     # Question 5: In the Windows case, why do we need to convert the signal quality to dBm?
     # HINT: https://learn.microsoft.com/en-us/windows/win32/api/wlanapi/ns-wlanapi-wlan_association_attributes?redirectedfrom=MSDN
+    # because windows system does not return the raw dBm data, instead, it returns a quality percentage between 0-100.
+
     if platform.system() == 'Linux': # Linux
         output = subprocess.check_output("iwconfig wlan0", shell=True)
         match = re.search(r"Signal level=(-?\d+) dBm", output.decode('utf-8'))
@@ -72,6 +80,10 @@ def main():
         signal_strength_std = np.std(signal_strengths)
 
         # Question 6: What is the standard deviation? Why is it useful to calculate it?
+        # standard deviation tells you how apart / how scattered your data is
+        # my standard deviation is practically and theoratically zero, because i only have a dorm room ;(
+
+
         data.append((location, signal_strength_mean, signal_strength_std))
 
     # create a dataframe from the data
@@ -81,6 +93,10 @@ def main():
     # HINT: https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html
     # HINT: print the dataframe to see what it looks like
     # print(df)
+    # Data frame is the fundamental unit of data link layer. 
+    # using data frame because computers need a structured way to track information of different physical and signals.
+    # it is also the payload of the layers above data link layer. 
+    # it helps computer to decipher which layer this portion of information belongs to.
 
     # save the raw numbers too - handy for your README
     df.to_csv("signal_strength.csv", index=False)
@@ -99,12 +115,16 @@ def main():
         labels={'location': 'Location', 'signal_strength_mean': 'Mean Signal Strength (dBm)'},
     )
     # Question 8: Why is it important to plot the error bars? What do they tell us?
+        # error bar is potted 1 standard deviation above and below the average vallue
+        # it tells how much the measured value varies. 
 
     # write the plot to a file - make sure to commit the PNG file to your repository along with your code
     fig.write_image("signal_strength.png")
 
     # Question 9: What did you observe from the plot? How does the signal strength change as you move between locations?
     #             Why do you think signal strength is weaker in certain locations?
+    # sorry, i onnly have 1 room. but it does gets tiny bit stronger when i am closer to one particular wall. 
+    # I guess the wifi device is in the neighbouring room through that particular wall.
 
 
 if __name__ == "__main__":
