@@ -1,0 +1,21 @@
+
+
+frame transmission time = frame size / link rate
+
+1 second = frame size / 80 bites per seconds
+
+framse size = 80 bites
+
+
+frame time = 40  / 250k per seconds
+frame time =  0.00016 seconds 
+
+
+increase by a factor of 2
+
+
+what determines the data rates: 
+    modulation scheme 
+    symbol rate aka: symbols per seconds
+    code rate (code bits / block size)
+    

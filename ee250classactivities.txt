@@ -1,0 +1,13 @@
+
+0 dBm, = -20dB, d0 = 1m N = 3
+
+PrdBm(d) = PtdBm + Kdb - N 10log(d/d0) 
+
+Radio Threshold = -80dBm 
+
+
+y = -20 - 10(3) log(x)
+intercets with with y = -80
+intercets at 7.3,-80
+
+

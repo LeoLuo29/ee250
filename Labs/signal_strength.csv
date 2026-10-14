@@ -1,0 +1,6 @@
+location,signal_strength_mean,signal_strength_std
+bedroom,-46.0,0.4472135954999579
+living room,-46.4,0.66332495807108
+kitchen,-46.9,0.3
+bathroom,-46.6,0.66332495807108
+garage,-47.2,0.4
