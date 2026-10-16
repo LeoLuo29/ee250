@@ -1,0 +1,2 @@
+Distance,Run1,Run2,Run3,Run4,Run5,Avg,PacketLoss1,PacketLoss2,PacketLoss3,PacketLoss4,PacketLoss5,Avg_PacketLoss
+5,0.972,2.603,3.780,2.923,3.556,2.767,0.000,0.000,0.030,0.039,0.000,0.014

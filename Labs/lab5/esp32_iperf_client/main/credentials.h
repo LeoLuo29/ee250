@@ -19,8 +19,8 @@
  * or a phone hotspot — and note that the whole point of this lab is to walk
  * *away* from the access point, so a hotspot that you carry in your pocket
  * will not show you anything.  Leave the phone next to the laptop. */
-#define WIFI_SSID       "YOUR_WIFI_SSID"
-#define WIFI_PASSWORD   "YOUR_WIFI_PASSWORD"
+#define WIFI_SSID       "ee250"
+#define WIFI_PASSWORD   "ee250@vhe205"
 
 /* ---------------------------------------------------------------------------
  * iperf server
@@ -32,7 +32,7 @@
  * board, exactly as in Lab 2 Part 3 and Lab 4 Part 3.  This is the address
  * the `measure` command sends to; the `iperf -c <host>` command lets you
  * override it for a single run. */
-#define IPERF_SERVER_IP "192.168.1.42"
+#define IPERF_SERVER_IP "192.169.0.102"
 
 /* iperf2's default port.  Change it only if you also change it on the VM
  * (`iperf -s -p <port>`). */
