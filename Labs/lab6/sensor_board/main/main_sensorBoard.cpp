@@ -3,6 +3,7 @@
 #include "freertos/task.h"
 #include "driver/gpio.h"
 #include "sensor.h"
+#include "led.h"
 
 #define LED_PIN        GPIO_NUM_8
 #define BUTTON_PIN     GPIO_NUM_7
@@ -24,12 +25,6 @@ static void IRAM_ATTR vib_isr(void *arg)
     portEXIT_CRITICAL_ISR(&vib_mux);
 }
 
-
-static void led_init(void)
-{
-    gpio_reset_pin(LED_PIN);
-    gpio_set_direction(LED_PIN, GPIO_MODE_OUTPUT);
-}
 
 static void button_init(void)
 {
@@ -71,19 +66,14 @@ static int read_vibration(void)
 extern "C" void app_main(void){
 
     //init
-    led_init();
+    LED led(LED_PIN);
     button_init();
     vibration_init();
     LightSensor light;
     TempSensor temp;
 
     // Startup test: blink 5 times, 500 ms on / 500 ms off
-    for (int i = 0; i < 5; i++) {
-        gpio_set_level(LED_PIN, 1);
-        vTaskDelay(pdMS_TO_TICKS(500));
-        gpio_set_level(LED_PIN, 0);
-        vTaskDelay(pdMS_TO_TICKS(500));
-    }
+    led.blink(5, 500);
 
     read_vibration();   // clear any edges counted during the blinks
 
@@ -100,7 +90,7 @@ extern "C" void app_main(void){
                temp.lastRaw(), temp_c,
                pressed ? "PRESSED" : "released", vib);
 
-        gpio_set_level(LED_PIN, pressed || vib > VIB_THRESHOLD);
+        led.set(pressed || vib > VIB_THRESHOLD);
 
         vTaskDelayUntil(&last_wake, pdMS_TO_TICKS(SAMPLE_PERIOD_MS));
     }
