@@ -19,7 +19,7 @@ void button_init(void) {
 void read_sensor(void) {
     
 }
-void app_main(void)
+extern "C" void app_main(void)
 {
     // blink led  5 times
     led_init();
@@ -29,10 +29,11 @@ void app_main(void)
         gpio_set_level(LED_PIN, 0);
         vTaskDelay(500 / portTICK_PERIOD_MS);
     }
+    TickType_t last_wake = xTaskGetTickCount();
     while(1){
         read_sensor(); // replace with actual sensor reading function
 
-        vTaskDelayUntil(NULL, 100 / portTICK_PERIOD_MS);
+        vTaskDelayUntil(&last_wake, pdMS_TO_TICKS(100));
     }
 
 }
