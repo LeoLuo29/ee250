@@ -1,2 +1,2 @@
-idf_component_register(SRCS "sensor_board.cpp" "adc.cpp"
+idf_component_register(SRCS "main_sensorBoard.cpp" "adc.cpp" "sensor.cpp"
                     INCLUDE_DIRS ".")
