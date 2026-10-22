@@ -20,7 +20,7 @@ static portMUX_TYPE vib_mux = portMUX_INITIALIZER_UNLOCKED;
 static void IRAM_ATTR vib_isr(void *arg)
 {
     portENTER_CRITICAL_ISR(&vib_mux);
-    vib_count++;
+    vib_count = vib_count + 1;
     portEXIT_CRITICAL_ISR(&vib_mux);
 }
 
