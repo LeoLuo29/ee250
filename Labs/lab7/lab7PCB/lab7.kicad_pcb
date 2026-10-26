@@ -89,7 +89,6 @@
 		)
 		(capping no)
 		(filling no)
-		(zone_defaults)
 		(pcbplotparams
 			(layerselection 0x00000000_00000000_55555555_5755f5ff)
 			(plot_on_all_layers_selection 0x00000000_00000000_00000000_00000000)
@@ -126,6 +125,17 @@
 			(scaleselection 1)
 			(outputdirectory "")
 		)
+	)
+	(gr_rect
+		(start 90.75 55.75)
+		(end 154.25 119.25)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "Edge.Cuts")
+		(uuid "e4e383e8-6629-4860-a2ac-aa10a4bda5d2")
 	)
 	(embedded_fonts no)
 )
