@@ -18,3 +18,7 @@ sdkconfig.old
 
 # Untracked credential files (WiFi passwords, API keys)
 Labs/lab3/esp32_weather_client/main/credentials.h
+
+# KiCad lock files and local history
+*.lck
+.history/
