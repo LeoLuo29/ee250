@@ -1,0 +1,1151 @@
+%PDF-1.3
+%ºß¬à
+3 0 obj
+<</Type /Page
+/Parent 1 0 R
+/Resources 2 0 R
+/MediaBox [0 0 612. 792.]
+/Contents 4 0 R
+>>
+endobj
+4 0 obj
+<<
+/Length 12049
+>>
+stream
+0.200025 w
+0 G
+0.07 0.11 0.19 rg
+0. 792. 612. -86. re
+f
+BT
+/F2 20 Tf
+23. TL
+1. g
+54. 752. Td
+(Hover or Crash — Design Report) Tj
+ET
+BT
+/F1 10 Tf
+11.5 TL
+1. g
+54. 732. Td
+(Drone Motor Selection Design Challenge · EE 250 · Instructor: Bhaskar Krishnamachari) Tj
+ET
+BT
+/F1 10 Tf
+11.5 TL
+1. g
+54. 718. Td
+(10/19/2026, 10:38:27 AM) Tj
+ET
+BT
+/F2 12 Tf
+13.7999999999999989 TL
+0.118 0.118 0.157 rg
+54. 680. Td
+(Flight crew) Tj
+ET
+BT
+/F1 10 Tf
+11.5 TL
+0.118 0.118 0.157 rg
+54. 661.7999999999999545 Td
+(Name: Leo) Tj
+ET
+BT
+/F1 10 Tf
+11.5 TL
+0.118 0.118 0.157 rg
+54. 648.2999999999999545 Td
+(Teammates: invisible george and invisible elizabeth) Tj
+ET
+0.78 0.8 0.84 RG
+54. 626.7999999999999545 m
+558. 626.7999999999999545 l
+S
+BT
+/F2 12 Tf
+13.7999999999999989 TL
+0.118 0.118 0.157 rg
+54. 614.7999999999999545 Td
+(Mission) Tj
+ET
+BT
+/F1 10 Tf
+11.5 TL
+0.118 0.118 0.157 rg
+54. 596.6000000000000227 Td
+(Campus Rooftop Inspection: 1 lb quad \(airframe 300 g + 4 motors\), 3S Li-Po 11.1 V 1500 mAh, 13.4 in wheelbase) Tj
+ET
+BT
+/F1 10 Tf
+11.5 TL
+0.118 0.118 0.157 rg
+54. 583.1000000000000227 Td
+(so adjacent motors are 9.5 in apart \(props wider than that collide\), hover 10 min with one gust, budget $200 for the) Tj
+ET
+BT
+/F1 10 Tf
+11.5 TL
+0.118 0.118 0.157 rg
+54. 569.6000000000000227 Td
+(motor set.) Tj
+ET
+0.78 0.8 0.84 RG
+54. 548.1000000000000227 m
+558. 548.1000000000000227 l
+S
+BT
+/F2 12 Tf
+13.7999999999999989 TL
+0.118 0.118 0.157 rg
+54. 536.1000000000000227 Td
+(Sizing lab \(student entries vs. model\)) Tj
+ET
+0.91 0.93 0.96 rg
+54. 517.9000000000000909 470. -18. re
+f
+BT
+/F2 9 Tf
+10.3499999999999996 TL
+0.118 0.118 0.157 rg
+59. 505.9000000000000341 Td
+(Quantity) Tj
+ET
+BT
+/F2 9 Tf
+10.3499999999999996 TL
+0.118 0.118 0.157 rg
+289. 505.9000000000000341 Td
+(Student) Tj
+ET
+BT
+/F2 9 Tf
+10.3499999999999996 TL
+0.118 0.118 0.157 rg
+379. 505.9000000000000341 Td
+(Model) Tj
+ET
+BT
+/F2 9 Tf
+10.3499999999999996 TL
+0.118 0.118 0.157 rg
+469. 505.9000000000000341 Td
+(Unit) Tj
+ET
+0.82 0.84 0.87 RG
+54. 499.9000000000000341 m
+524. 499.9000000000000341 l
+S
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.118 0.118 0.157 rg
+59. 487.9000000000000341 Td
+(Total weight force) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.118 0.118 0.157 rg
+289. 487.9000000000000341 Td
+(4.448) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.118 0.118 0.157 rg
+379. 487.9000000000000341 Td
+(4.448) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.118 0.118 0.157 rg
+469. 487.9000000000000341 Td
+(N) Tj
+ET
+0.82 0.84 0.87 RG
+54. 481.9000000000000341 m
+524. 481.9000000000000341 l
+S
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.118 0.118 0.157 rg
+59. 469.9000000000000341 Td
+(Hover thrust per motor) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.118 0.118 0.157 rg
+289. 469.9000000000000341 Td
+(1.112) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.118 0.118 0.157 rg
+379. 469.9000000000000341 Td
+(1.112) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.118 0.118 0.157 rg
+469. 469.9000000000000341 Td
+(N) Tj
+ET
+0.82 0.84 0.87 RG
+54. 463.9000000000000341 m
+524. 463.9000000000000341 l
+S
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.118 0.118 0.157 rg
+59. 451.9000000000000341 Td
+(Design target per motor \(2x\)) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.118 0.118 0.157 rg
+289. 451.9000000000000341 Td
+(2.224) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.118 0.118 0.157 rg
+379. 451.9000000000000341 Td
+(2.224) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.118 0.118 0.157 rg
+469. 451.9000000000000341 Td
+(N) Tj
+ET
+0.82 0.84 0.87 RG
+54. 445.9000000000000341 m
+524. 445.9000000000000341 l
+S
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.118 0.118 0.157 rg
+59. 433.9000000000000341 Td
+(Rotational speed n) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.118 0.118 0.157 rg
+289. 433.9000000000000341 Td
+(103.2) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.118 0.118 0.157 rg
+379. 433.9000000000000341 Td
+(103.2) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.118 0.118 0.157 rg
+469. 433.9000000000000341 Td
+(rev/s) Tj
+ET
+0.82 0.84 0.87 RG
+54. 427.9000000000000341 m
+524. 427.9000000000000341 l
+S
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.118 0.118 0.157 rg
+59. 415.9000000000000341 Td
+(rpm) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.118 0.118 0.157 rg
+289. 415.9000000000000341 Td
+(6192) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.118 0.118 0.157 rg
+379. 415.9000000000000341 Td
+(6192) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.118 0.118 0.157 rg
+469. 415.9000000000000341 Td
+(rpm) Tj
+ET
+0.82 0.84 0.87 RG
+54. 409.9000000000000341 m
+524. 409.9000000000000341 l
+S
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.118 0.118 0.157 rg
+59. 397.9000000000000341 Td
+(Target KV = 2 x rpm / V \(8 in prop, 3S\)) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.118 0.118 0.157 rg
+289. 397.9000000000000341 Td
+(1116) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.118 0.118 0.157 rg
+379. 397.9000000000000341 Td
+(1116) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.118 0.118 0.157 rg
+469. 397.9000000000000341 Td
+(rpm/V) Tj
+ET
+0.82 0.84 0.87 RG
+54. 391.9000000000000341 m
+524. 391.9000000000000341 l
+S
+0.78 0.8 0.84 RG
+54. 381.9000000000000341 m
+558. 381.9000000000000341 l
+S
+BT
+/F2 12 Tf
+13.7999999999999989 TL
+0.118 0.118 0.157 rg
+54. 369.9000000000000341 Td
+(Scorecard \(1–5, auto-rated by the simulator\)) Tj
+ET
+0.91 0.93 0.96 rg
+54. 351.7000000000000455 502. -18. re
+f
+BT
+/F2 9 Tf
+10.3499999999999996 TL
+0.118 0.118 0.157 rg
+59. 339.7000000000000455 Td
+(Criterion) Tj
+ET
+BT
+/F2 9 Tf
+10.3499999999999996 TL
+0.118 0.118 0.157 rg
+209. 339.7000000000000455 Td
+(A: 2300KV 5×3) Tj
+ET
+BT
+/F2 9 Tf
+10.3499999999999996 TL
+0.118 0.118 0.157 rg
+297. 339.7000000000000455 Td
+(B: 1500KV 7×4) Tj
+ET
+BT
+/F2 9 Tf
+10.3499999999999996 TL
+0.118 0.118 0.157 rg
+385. 339.7000000000000455 Td
+(C: 920KV 9×4.5) Tj
+ET
+BT
+/F2 9 Tf
+10.3499999999999996 TL
+0.118 0.118 0.157 rg
+473. 339.7000000000000455 Td
+(D: 600KV 10×4.5) Tj
+ET
+0.82 0.84 0.87 RG
+54. 333.7000000000000455 m
+556. 333.7000000000000455 l
+S
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.118 0.118 0.157 rg
+59. 321.7000000000000455 Td
+(Meets thrust target) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.118 0.118 0.157 rg
+209. 321.7000000000000455 Td
+(5) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.118 0.118 0.157 rg
+297. 321.7000000000000455 Td
+(5) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.118 0.118 0.157 rg
+385. 321.7000000000000455 Td
+(5) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.118 0.118 0.157 rg
+473. 321.7000000000000455 Td
+(1) Tj
+ET
+0.82 0.84 0.87 RG
+54. 315.7000000000000455 m
+556. 315.7000000000000455 l
+S
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.118 0.118 0.157 rg
+59. 303.7000000000000455 Td
+(Thrust-to-weight) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.118 0.118 0.157 rg
+209. 303.7000000000000455 Td
+(4) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.118 0.118 0.157 rg
+297. 303.7000000000000455 Td
+(5) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.118 0.118 0.157 rg
+385. 303.7000000000000455 Td
+(5) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.118 0.118 0.157 rg
+473. 303.7000000000000455 Td
+(1) Tj
+ET
+0.82 0.84 0.87 RG
+54. 297.7000000000000455 m
+556. 297.7000000000000455 l
+S
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.118 0.118 0.157 rg
+59. 285.7000000000000455 Td
+(Cost) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.118 0.118 0.157 rg
+209. 285.7000000000000455 Td
+(5) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.118 0.118 0.157 rg
+297. 285.7000000000000455 Td
+(4) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.118 0.118 0.157 rg
+385. 285.7000000000000455 Td
+(2) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.118 0.118 0.157 rg
+473. 285.7000000000000455 Td
+(2) Tj
+ET
+0.82 0.84 0.87 RG
+54. 279.7000000000000455 m
+556. 279.7000000000000455 l
+S
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.118 0.118 0.157 rg
+59. 267.7000000000000455 Td
+(Agility / response) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.118 0.118 0.157 rg
+209. 267.7000000000000455 Td
+(5) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.118 0.118 0.157 rg
+297. 267.7000000000000455 Td
+(4) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.118 0.118 0.157 rg
+385. 267.7000000000000455 Td
+(3) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.118 0.118 0.157 rg
+473. 267.7000000000000455 Td
+(2) Tj
+ET
+0.82 0.84 0.87 RG
+54. 261.7000000000000455 m
+556. 261.7000000000000455 l
+S
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.118 0.118 0.157 rg
+59. 249.7000000000000455 Td
+(Frame fit / clearance) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.118 0.118 0.157 rg
+209. 249.7000000000000455 Td
+(5) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.118 0.118 0.157 rg
+297. 249.7000000000000455 Td
+(5) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.118 0.118 0.157 rg
+385. 249.7000000000000455 Td
+(3) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.118 0.118 0.157 rg
+473. 249.7000000000000455 Td
+(1) Tj
+ET
+0.82 0.84 0.87 RG
+54. 243.7000000000000455 m
+556. 243.7000000000000455 l
+S
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.118 0.118 0.157 rg
+59. 231.7000000000000455 Td
+(Endurance \(10 min\)) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.118 0.118 0.157 rg
+209. 231.7000000000000455 Td
+(2) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.118 0.118 0.157 rg
+297. 231.7000000000000455 Td
+(4) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.118 0.118 0.157 rg
+385. 231.7000000000000455 Td
+(5) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.118 0.118 0.157 rg
+473. 231.7000000000000455 Td
+(5) Tj
+ET
+0.82 0.84 0.87 RG
+54. 225.7000000000000455 m
+556. 225.7000000000000455 l
+S
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.118 0.118 0.157 rg
+59. 213.7000000000000455 Td
+(Total \(of 30\)) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.118 0.118 0.157 rg
+209. 213.7000000000000455 Td
+(26) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.118 0.118 0.157 rg
+297. 213.7000000000000455 Td
+(27) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.118 0.118 0.157 rg
+385. 213.7000000000000455 Td
+(23) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.118 0.118 0.157 rg
+473. 213.7000000000000455 Td
+(12) Tj
+ET
+0.82 0.84 0.87 RG
+54. 207.7000000000000455 m
+556. 207.7000000000000455 l
+S
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.118 0.118 0.157 rg
+59. 195.7000000000000455 Td
+(Sim endurance) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.118 0.118 0.157 rg
+209. 195.7000000000000455 Td
+(8:34) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.118 0.118 0.157 rg
+297. 195.7000000000000455 Td
+(12:54) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.118 0.118 0.157 rg
+385. 195.7000000000000455 Td
+(13:47) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.118 0.118 0.157 rg
+473. 195.7000000000000455 Td
+(n/a) Tj
+ET
+0.82 0.84 0.87 RG
+54. 189.7000000000000455 m
+556. 189.7000000000000455 l
+S
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.118 0.118 0.157 rg
+59. 177.7000000000000455 Td
+(Thrust : weight) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.118 0.118 0.157 rg
+209. 177.7000000000000455 Td
+(7.3:1) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.118 0.118 0.157 rg
+297. 177.7000000000000455 Td
+(8.7:1) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.118 0.118 0.157 rg
+385. 177.7000000000000455 Td
+(9.1:1) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.118 0.118 0.157 rg
+473. 177.7000000000000455 Td
+(5.6:1) Tj
+ET
+0.82 0.84 0.87 RG
+54. 171.7000000000000455 m
+556. 171.7000000000000455 l
+S
+0.78 0.8 0.84 RG
+54. 161.7000000000000455 m
+558. 161.7000000000000455 l
+S
+BT
+/F2 12 Tf
+13.7999999999999989 TL
+0.118 0.118 0.157 rg
+54. 149.7000000000000455 Td
+(Test flights flown) Tj
+ET
+BT
+/F1 10 Tf
+11.5 TL
+0.118 0.118 0.157 rg
+54. 131.5 Td
+(Option A — FORCED LANDING. Battery empty at 8:34; the mission needed 10:00. Spinning 5-inch props at 2300) Tj
+ET
+BT
+/F1 10 Tf
+11.5 TL
+0.118 0.118 0.157 rg
+54. 118. Td
+(KV takes about 117 W just to hover, and a 1500 mAh 3S pack \(16.7 Wh\) can't supply that for 10 minutes.) Tj
+ET
+BT
+/F1 10 Tf
+11.5 TL
+0.118 0.118 0.157 rg
+54. 104.5 Td
+(Option B — MISSION COMPLETE. Clean hover, recovered the gust, landed with reserve.) Tj
+ET
+BT
+/F1 10 Tf
+11.5 TL
+0.118 0.118 0.157 rg
+54. 91. Td
+(Option C — MISSION COMPLETE. Prop tips pass within 0.25 in of each other; any arm flex could cause a strike.) Tj
+ET
+BT
+/F1 10 Tf
+11.5 TL
+0.118 0.118 0.157 rg
+54. 77.5 Td
+(Recovery from the gust was slow \(large prop inertia\).) Tj
+ET
+BT
+/F1 10 Tf
+11.5 TL
+0.118 0.118 0.157 rg
+54. 64. Td
+(Option D — CRASH. Prop strike. Adjacent motors are 9.5 in apart, so two 10-inch props overlap by 0.5 in and hit) Tj
+ET
+endstream
+endobj
+5 0 obj
+<</Type /Page
+/Parent 1 0 R
+/Resources 2 0 R
+/MediaBox [0 0 612. 792.]
+/Contents 6 0 R
+>>
+endobj
+6 0 obj
+<<
+/Length 2509
+>>
+stream
+0.200025 w
+0.78 0.8 0.84 RG
+BT
+/F1 10 Tf
+11.5 TL
+0.118 0.118 0.157 rg
+54. 738. Td
+(each other on spool-up.) Tj
+ET
+BT
+/F1 10 Tf
+11.5 TL
+0.118 0.118 0.157 rg
+54. 724.5 Td
+(Option B — MISSION COMPLETE. Clean hover, recovered the gust, landed with reserve.) Tj
+ET
+0.78 0.8 0.84 RG
+54. 703. m
+558. 703. l
+S
+BT
+/F2 12 Tf
+13.7999999999999989 TL
+0.118 0.118 0.157 rg
+54. 691. Td
+(Student decision) Tj
+ET
+BT
+/F2 11 Tf
+12.6499999999999986 TL
+0.118 0.118 0.157 rg
+54. 672.7999999999999545 Td
+(Recommended option: B — 1500 KV, 7×4 prop, $125 per set) Tj
+ET
+BT
+/F2 10 Tf
+11.5 TL
+0.118 0.118 0.157 rg
+54. 653.9500000000000455 Td
+(Why I chose it:) Tj
+ET
+BT
+/F1 10 Tf
+11.5 TL
+0.118 0.118 0.157 rg
+54. 640.4500000000000455 Td
+(the appropriate prop size margin ) Tj
+ET
+BT
+/F2 10 Tf
+11.5 TL
+0.118 0.118 0.157 rg
+54. 622.9500000000000455 Td
+(Why I did not choose the others:) Tj
+ET
+BT
+/F1 10 Tf
+11.5 TL
+0.118 0.118 0.157 rg
+54. 609.4500000000000455 Td
+(cost + inappropriate prop size) Tj
+ET
+0.78 0.8 0.84 RG
+54. 587.9500000000000455 m
+558. 587.9500000000000455 l
+S
+BT
+/F2 12 Tf
+13.7999999999999989 TL
+0.118 0.118 0.157 rg
+54. 575.9500000000000455 Td
+(Simulator feedback) Tj
+ET
+BT
+/F1 10 Tf
+11.5 TL
+0.118 0.118 0.157 rg
+54. 557.75 Td
+(• Option B meets the thrust target with 8.7:1 thrust-to-weight and 12:54 of endurance, so it completes the mission.) Tj
+ET
+BT
+/F1 10 Tf
+11.5 TL
+0.118 0.118 0.157 rg
+54. 544.25 Td
+(• This matches the simulator's top in-budget option \(27/30\).) Tj
+ET
+BT
+/F1 10 Tf
+11.5 TL
+0.118 0.118 0.157 rg
+54. 530.75 Td
+(• Options flown: A, B, C, D.) Tj
+ET
+BT
+/F1 10 Tf
+11.5 TL
+0.118 0.118 0.157 rg
+54. 517.25 Td
+(• KV check: your 8-inch target was ~1116 rpm/V; scaled by \(8/D\)² for a 7-inch prop that is ~1499, against a) Tj
+ET
+BT
+/F1 10 Tf
+11.5 TL
+0.118 0.118 0.157 rg
+54. 503.75 Td
+(catalog 1500. The rule puts the needed rpm at half the motor's top speed \(KV × V\), leaving the other half for gusts) Tj
+ET
+BT
+/F1 10 Tf
+11.5 TL
+0.118 0.118 0.157 rg
+54. 490.25 Td
+(and battery sag.) Tj
+ET
+BT
+/F3 8 Tf
+9.1999999999999993 TL
+0.431 0.431 0.471 rg
+54. 464.75 Td
+( M o d e l   n o t e s :   t h r u s t   f r o m   T   =   C t · r h o · n ² · D t   w i t h   C t   =   0 . 1 0 ;   e n d u r a n c e   f r o m   a   p e r - o p t i o n   e f f i c i e n c y   \( g / W \)   a n d   a   1 6 . 6 5   W h   p a c k ;   a g i l i t y   f r o m   p r o p) Tj
+ET
+BT
+/F3 8 Tf
+9.1999999999999993 TL
+0.431 0.431 0.471 rg
+54. 453.9499999999999886 Td
+(inertia. These are teaching approximations, not measured data.) Tj
+ET
+endstream
+endobj
+1 0 obj
+<</Type /Pages
+/Kids [3 0 R 5 0 R ]
+/Count 2
+>>
+endobj
+7 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+8 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica-Bold
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+9 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica-Oblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+10 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica-BoldOblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+11 0 obj
+<<
+/Type /Font
+/BaseFont /Courier
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+12 0 obj
+<<
+/Type /Font
+/BaseFont /Courier-Bold
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+13 0 obj
+<<
+/Type /Font
+/BaseFont /Courier-Oblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+14 0 obj
+<<
+/Type /Font
+/BaseFont /Courier-BoldOblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+15 0 obj
+<<
+/Type /Font
+/BaseFont /Times-Roman
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+16 0 obj
+<<
+/Type /Font
+/BaseFont /Times-Bold
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+17 0 obj
+<<
+/Type /Font
+/BaseFont /Times-Italic
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+18 0 obj
+<<
+/Type /Font
+/BaseFont /Times-BoldItalic
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+19 0 obj
+<<
+/Type /Font
+/BaseFont /ZapfDingbats
+/Subtype /Type1
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+20 0 obj
+<<
+/Type /Font
+/BaseFont /Symbol
+/Subtype /Type1
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+2 0 obj
+<<
+/ProcSet [/PDF /Text /ImageB /ImageC /ImageI]
+/Font <<
+/F1 7 0 R
+/F2 8 0 R
+/F3 9 0 R
+/F4 10 0 R
+/F5 11 0 R
+/F6 12 0 R
+/F7 13 0 R
+/F8 14 0 R
+/F9 15 0 R
+/F10 16 0 R
+/F11 17 0 R
+/F12 18 0 R
+/F13 19 0 R
+/F14 20 0 R
+>>
+/XObject <<
+>>
+>>
+endobj
+21 0 obj
+<<
+/Producer (jsPDF 2.5.2)
+/CreationDate (D:20261019103827-07'00')
+>>
+endobj
+22 0 obj
+<<
+/Type /Catalog
+/Pages 1 0 R
+/OpenAction [3 0 R /FitH null]
+/PageLayout /OneColumn
+>>
+endobj
+xref
+0 23
+0000000000 65535 f 
+0000014888 00000 n 
+0000016713 00000 n 
+0000000015 00000 n 
+0000000120 00000 n 
+0000012222 00000 n 
+0000012327 00000 n 
+0000014951 00000 n 
+0000015076 00000 n 
+0000015206 00000 n 
+0000015339 00000 n 
+0000015477 00000 n 
+0000015601 00000 n 
+0000015730 00000 n 
+0000015862 00000 n 
+0000015998 00000 n 
+0000016126 00000 n 
+0000016253 00000 n 
+0000016382 00000 n 
+0000016515 00000 n 
+0000016617 00000 n 
+0000016963 00000 n 
+0000017049 00000 n 
+trailer
+<<
+/Size 23
+/Root 22 0 R
+/Info 21 0 R
+/ID [ <0933727F28252F35D3FE71EB6BD61EE0> <0933727F28252F35D3FE71EB6BD61EE0> ]
+>>
+startxref
+17153
+%%EOF
