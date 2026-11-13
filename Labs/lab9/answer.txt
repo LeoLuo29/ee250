@@ -1,0 +1,35 @@
+What type of authentication are we using here (currently)? Does it use any keys?
+password based, client log in using password and user name. 
+no key
+
+
+
+
+For TLS encryption, what keys are used when the client sends a message to the server? For crypto authentication, how can the server verify a message is from a given client?
+the client gets the server's public key from server-cert.pem
+the server's private key verifies the public key.
+
+
+
+
+We created a pair of asymmetric keys. What are their names? Which is public and which is private?
+server-key.pem is the private key, made with openssl genpkey
+server-cert.pem contains the public key, made with openssl req-x509
+It's a self-signed certificate: the public key plus identity info (the questions you pressed Enter through), signed with the private key.
+
+
+
+
+
+
+What is a certificate authority (CA)? What kind of attack can a CA prevent?
+A CA is a third party. It checks who owns a public key and signs a certificate.
+of who belongs to this server.
+
+It prevents man-in-the middle attacks. 
+AKA: the attacker sits between client and server and sends the client their own public key
+while pretending to be the server. 
+without a CA, the client can't tell the differences.
+The CA encrypts everything to the attacker. 
+
+So the idea is that encryption along isn't enough, you also have to know who you are encrypting to.
